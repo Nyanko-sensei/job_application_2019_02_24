@@ -28,8 +28,7 @@ class Post
         $post->setFromId($postData['from_id'] ?? null);
         $post->setMessage($postData['message'] ?? null);
         $post->setType($postData['message'] ?? null);
-        $post->setCreatedTime(Carbon::createFromTimestamp(strtotime($postData['message'] ?? null)));
-
+        $post->setCreatedTime(Carbon::createFromTimestamp(strtotime($postData['created_time'] ?? null)));
         return $post;
     }
 
