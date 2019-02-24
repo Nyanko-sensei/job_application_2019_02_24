@@ -2,6 +2,9 @@
 
 require_once   'vendor/autoload.php';
 
+$dotenv = Dotenv\Dotenv::create(__DIR__);
+$dotenv->load();
+
 $dependencyInjectionContainer = require_once 'config/mapForDependencyContainer.php';
 
 $responseHandler = $dependencyInjectionContainer->get(JobApplication_2019_02_24\Components\Response\JsonResponse::class);
