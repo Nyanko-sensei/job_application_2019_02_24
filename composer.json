@@ -1,0 +1,19 @@
+{
+    "name": "nyanko-sensei/job_application_2019_02_24",
+    "type": "project",
+    "require": {
+        "symfony/dependency-injection": "^4.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0"
+    },
+    "authors": [
+        {
+            "name": "Gediminas Radzevicius",
+            "email": "radzeviciusgediminas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"JobApplication_2019_02_24\\": "src/"}
+    }
+}
